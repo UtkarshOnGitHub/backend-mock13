@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const ScoreSchema = new mongoose.Schema({
-    score:{type:String},
+    score:{type:Number},
     playerId:{ type: mongoose.Schema.Types.ObjectId, ref: "player" }
 }
 )

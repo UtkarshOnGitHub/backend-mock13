@@ -18,7 +18,7 @@ user.post("/" , async (req,res)=>{
     try {
         let data = new playerModel({name,level})
         await data.save()
-        res.send("data Added")
+        res.send(data)
     } catch (error) {
         console.log(error)
     }
